@@ -252,10 +252,10 @@ const NotesApp = ({setIsAuthenticated}) => {
         </div>
 
         {/* Notes Grid */}
-        <div className="row g-3">
+        <div className="row g-3"  style={{height:"80vh",overflow:"scroll"}}>
           {filteredNotes.map((note) => (
             <div key={note._id} className="col-md-6 col-lg-4" style={{overflow:"scroll",minWidth:"320px"}}>
-              <Card className="p-3 shadow-sm " style={{ minWidth:"320px", minHeight:"200px", maxHeight:'200px',overflow:"scroll" }}>
+              <Card className="p-3 shadow-sm " style={{ minHeight:"200px", maxHeight:'200px',overflow:"scroll" }}>
                 <div className="d-flex justify-content-between align-items-start">
                   <div className="flex-grow-1" onClick={() => handleNoteClick(note)} style={{ cursor: 'pointer' }}>
                     <h5 className="mb-2">{note.title}</h5>
