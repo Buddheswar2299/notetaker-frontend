@@ -19,7 +19,7 @@ const NotesApp = ({setIsAuthenticated}) => {
   const [activeView, setActiveView] = useState('home'); // 'home' or 'favorites'
   const [searchQuery, setSearchQuery] = useState('');
   const [isEditing, setIsEditing] = useState(false); // Track if we're editing a note
-  const[showSidebar,setShowSidebar] = useState(false)
+  const[showSidebar,setShowSidebar] = useState(true)
   // Fetch notes from the backend when the component mounts
   useEffect(() => {
     fetchNotes();
