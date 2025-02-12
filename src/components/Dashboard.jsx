@@ -201,7 +201,7 @@ const NotesApp = ({setIsAuthenticated}) => {
     <div className="border-end bg-white p-3 d-none d-md-block" style={{ minWidth: '200px', maxWidth: '200px' }}>
       <div className="d-flex align-items-center mb-4">
         <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}>AI</div>
-        <span className="ms-2 fw-bold">AI Notes</span>
+        <span className="ms-2 fw-bold">Notes</span>
       </div>
   
       {/* Navigation */}
